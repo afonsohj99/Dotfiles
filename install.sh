@@ -225,6 +225,8 @@ if [ "$ENVIRONMENT" = true ]; then
         PACKAGES=$(find . -maxdepth 1 -type d -not -name ".*" -printf "%f ")
         stow --adopt $PACKAGES
         git restore .
+        systemctl --user daemon-reload
+        systemctl --user enable --now colors-apply.path
         print_success "Dotfiles set up"
 
         print_info "Setting up Chrome cookie whitelist..."
