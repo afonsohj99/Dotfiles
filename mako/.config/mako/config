@@ -1,6 +1,3 @@
-# mako notification daemon — themed to match the rest of the setup
-# Colors mirror colors/.config/colors/colors.conf
-
 font=JetBrains Mono Nerd Font 11
 background-color=#0f0f0fe6
 text-color=#ffffff
